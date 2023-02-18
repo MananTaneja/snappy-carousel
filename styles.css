@@ -1,0 +1,43 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 800px;
+}
+
+.gallery {
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.gallery_img {
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dot {
+    display: block;
+    width: 20px;
+}
+
+.dots-nav {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    width: inherit;
+    text-align: center;
+    justify-content: center;
+}
+
+.wrapper-controls {
+    width: 800px;
+    position: relative;
+}
