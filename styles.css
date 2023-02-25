@@ -13,10 +13,21 @@
     scroll-behavior: smooth;
 }
 
+/* Hiding scrollbar */
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .gallery_img {
     scroll-snap-align: start;
     object-fit: cover;
-}
+    scroll-snap-stop: always;
+}   
 
 a {
     text-decoration: none;
